@@ -9,7 +9,12 @@ let newJoke
 jokeBtn.addEventListener("click", (e) => {
   console.log("I should be grabbing a joke now...")
   // TODO: fetch a joke from the Joke API and render it to the DOM
-  getJoke()
+  
+  //using drop-down menu to select joke type 
+  let jokeType = document.querySelector("#type-selector").value;
+  console.log(jokeType);
+
+  getJoke(jokeType)
   .then(useJoke())
   .then(responseData => {
   newJoke = responseData;

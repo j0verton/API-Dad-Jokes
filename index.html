@@ -11,7 +11,23 @@
       <h1>API Joker</h1>
     </header>
     <section>
-      <button class="request-joke-btn">Tell me a joke!</button>
+      <!-- <button class="request-joke-btn">Tell me a joke!
+        <select name="catagory">
+            <option value="">Select Catagory</option>
+            <option value="general">General</option>
+            <option value="knock-knock">Knock-Knock</option>
+            <option value="programming">Programming</option>
+        </select>
+      </button> -->
+      <form>
+        <select name="type" id="type-selector">
+          <option value="">Select Catagory:</option>
+          <option value="general/">General</option>
+          <option value="knock-knock/">Knock-Knock</option>
+          <option value="programming/">Programming</option>
+        </select> 
+        <button class="request-joke-btn">Tell me a joke!</button>
+      </form>
       <p class="joke-setup">
         <!-- Joke Setup Goes Here -->
       </p>

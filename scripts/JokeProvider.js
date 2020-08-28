@@ -9,7 +9,8 @@ export const useJoke = (jokeObj) => {
     return joke = Object.assign({}, jokeObj);
 }
 
-export const getJoke = () => {
-    return fetch("https://official-joke-api.appspot.com/jokes/random")
+export const getJoke = (type) => {
+    debugger;
+    return fetch(`https://official-joke-api.appspot.com/jokes/${type}random`)
     .then(response => response.json())   
 }
