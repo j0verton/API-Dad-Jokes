@@ -11,6 +11,23 @@
       <h1>API Joker</h1>
     </header>
     <section>
+      <section>
+        <select name="action" id="type-selector">
+          <option value="">Select Category:</option>
+          <option value="general/">General</option>
+          <option value="knock-knock/">Knock-Knock</option>
+          <option value="programming/">Programming</option>
+        </select> 
+        <button class="request-joke-btn">Tell me a joke!</button>
+        <p class="joke-setup">
+          <!-- Joke Setup Goes Here -->
+        </p>
+        <button class="request-punch-btn">Punchline!</button>
+        <p class="joke-punchline">
+          <!-- Punchline Goes Here -->
+        </p>
+      </section>
+  
       <!-- <button class="request-joke-btn">Tell me a joke!
         <select name="catagory">
             <option value="">Select Catagory</option>
@@ -19,22 +36,23 @@
             <option value="programming">Programming</option>
         </select>
       </button> -->
-      <form>
-        <select name="type" id="type-selector">
+      <!-- <form action="" method="post">
+        <label for="action">Select Catagory:</label>
+        <select name="action" id="action">
           <option value="">Select Catagory:</option>
           <option value="general/">General</option>
           <option value="knock-knock/">Knock-Knock</option>
           <option value="programming/">Programming</option>
         </select> 
         <button class="request-joke-btn">Tell me a joke!</button>
-      </form>
-      <p class="joke-setup">
-        <!-- Joke Setup Goes Here -->
+      </form> -->
+      <!-- <p class="joke-setup">
+        Joke Setup Goes Here
       </p>
       <button class="request-punch-btn">Punchline!</button>
       <p class="joke-punchline">
-        <!-- Punchline Goes Here -->
-      </p>
+        Punchline Goes Here
+      </p> -->
     </section>
   </body>
   <script src="scripts/main.js" type="module"></script>
