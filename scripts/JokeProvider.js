@@ -6,26 +6,11 @@ let joke;
 
 export const useJoke = (jokeObj) => {
     joke = Object.assign({}, jokeObj);
-    console.log("joke", joke)
     return joke
-    // joke = jokeData[0]
-    // console.log("joke", joke)
 }
-
-// export const getJoke = () => {
-//     return fetch("https://official-joke-api.appspot.com/jokes/random")
-//     .then(response => response.json())   
-// } 
-
-
-// export const useJoke = (jokeObj) => {
-//     return joke = Object.assign({}, jokeObj);
-// }
-
 
 
 export const getJoke = (type) => {
-// debugger;
     return fetch(`https://official-joke-api.appspot.com/jokes/${type}random`)
     .then(response => response.json())
 }

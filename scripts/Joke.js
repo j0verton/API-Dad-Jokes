@@ -14,14 +14,13 @@ export const PunchLine = (joke) => {
  
 export const KnockJoke = (joke) =>  {
     let lineThreeOn = joke.setup.slice(28)
-    let lineThree = lineThreeOn.substring(0, lineThreeOn.indexOf('.'))
-    console.log(lineThreeOn, lineThree)
+    let lineThree = lineThreeOn.substring(0, lineThreeOn.indexOf('.')+1)
+    console.log(lineThree)
+    document.querySelector(".whos-there-btn").style.display = "";
     return `
-    <h2>Knock knock.</h2>
-    <button class="whos-there-btn">Who's there?</button>
-    <h2 class="line-three" style="display:none">${lineThree}.</h2>
+    <h2 id="knock">Knock knock.</h2>
+    <h2 class="line-three" style="display:none">${lineThree}</h2>
     <button class="who"  style="display:none">${lineThree} who?</button>
-
 `
 }
 
