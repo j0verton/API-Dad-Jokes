@@ -9,6 +9,7 @@ let punchTarget = document.querySelector(".joke-punchline")
 
 
 jokeBtn.addEventListener("click", (e) => {
+  document.querySelector(".whos-there-btn").style.display = "none";
   punchTarget.innerHTML = ""
   console.log("I should be grabbing a joke now...");
   let jokeTarget = document.querySelector(".joke-setup")
